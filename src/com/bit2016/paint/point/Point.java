@@ -1,8 +1,8 @@
-package bit2016.paint;
+package com.bit2016.paint.point;
 
 public class Point {
-	private int x;
-	private int y;
+	protected int x;
+	protected int y;
 
 	public Point() {
 		System.out.println("객체생성");
@@ -33,5 +33,15 @@ public class Point {
 	public void show() {
 		System.out.println("[x=" + x + ", y=" + y + "] 점을 그렸습니다.");
 	}
+
+	public void show(boolean visible) {
+		if (visible == true) {
+			show();
+		} else {
+			System.out.println("[x=" + x + ", y=" + y + "] 점을 지웠습니다.");
+		}
+
+	}
+
 
 }

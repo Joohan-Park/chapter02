@@ -12,9 +12,10 @@ public class SongTest {
 //		song.setTrack(3);
 
 		Song song = new Song("좋은날","아이유","Real","이민수",2010,3);
-		
 		song.show();
 
+		Song song2 = new Song("임창정","내가저지른사랑");
+		song2.show();
 	}
 
 }
